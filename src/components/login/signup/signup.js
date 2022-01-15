@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import HeaderComponent from "../../header/header";
 import Shapes from "../../shapes/shape";
 import '../login.scss';
 
@@ -27,7 +28,7 @@ const Signup = () => {
     return (
         <div className="login-div signup-component">
             <Shapes />
-            <h3>Create an account</h3>
+            <HeaderComponent title="Create an account" showLine={true}></HeaderComponent>
             <div className="content">
                 <form onSubmit={(e)=> onSubmit(e)}>
                     <div>

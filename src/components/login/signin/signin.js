@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Shapes from "../../shapes/shape";
+import HeaderComponent from "../../header/header";
 import '../login.scss';
 
 const Signin = (props) => {
@@ -15,7 +16,7 @@ const Signin = (props) => {
     return (
         <div className="login-div signin-component">
             <Shapes />
-            <h3>Sign In</h3>
+            <HeaderComponent title="Sign In" showLine={false}></HeaderComponent>
             <div className="content">
                 <form onSubmit={(e)=> onSubmit(e)}>
                     <div>
