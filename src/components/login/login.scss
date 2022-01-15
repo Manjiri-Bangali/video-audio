@@ -1,6 +1,6 @@
-.signin-component {
+.login-div {
     h3{
-        margin: 44px 0 0 21px;
+        margin: 44px 0 0 41px;
         font-weight: 500;
         font-size: 22px;
         line-height: 33px;
@@ -8,7 +8,7 @@
     }
     .content{
         color: #222222;
-        margin: 240px 0 0 422px;
+        margin: 240px auto;
         width: 360px;
         
         .input-label{
@@ -74,6 +74,21 @@
                 position: relative;
                 top: 0;
             }
+        }
+        .password-status{
+            font-size: 12px;
+            line-height: 18px;
+            position: absolute;
+            right: 0;
+        }
+        .password-status.Low{
+            color: #EE6363;
+        }
+        .password-status.Moderate{
+            color: #E7AB11;
+        }
+        .password-status.Strong{
+            color: #46B13D;
         }
     }
 }
